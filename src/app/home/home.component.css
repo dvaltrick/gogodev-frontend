@@ -1,4 +1,63 @@
 .apresentacao{
-    background-color: #42f48c;
+    background-color: white; 
+    height: 350px;
+}
+
+.divisao{
+    background-color: #00FA9A;
+    height: 4px;
+}
+
+.btn-default{
+    background-color:  #9931cc;
+    color: white;
+}
+
+.btn-default:hover{
+    background-color: #842ab1;
+}
+
+.tecs{
+    background-color: #47175e;
     height: 200px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+
+.tecs img{
+    height: 50px;
+}
+
+.img-web{
+    height: 100%;
+    width: 100%;
+}
+
+.caixa{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.titulo{
+    text-align: left;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #9931cc;
+}
+
+.texto{
+    text-align: left;
+    font-weight: 1.1em;
+    color: #9931cc;    
+}
+
+.container{
+    background-color: white;  
+    color: #9931cc;
+    font-size: 1.1em;
+    height: 350px;
+    align-items: center;
+    vertical-align: middle;
 }
