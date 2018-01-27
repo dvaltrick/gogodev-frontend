@@ -5,29 +5,29 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { HomeComponent } from './home/home.component';
-import { ArtigoComponent } from './artigo/artigo.component';
-import { TagComponent } from './tag/tag.component';
-import { ArtigoService } from './artigo/artigo.service';
 import { HttpClientModule, HttpClient  } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
-import { DetalheArtigoComponent } from './detalhe-artigo/detalhe-artigo.component';
-import { DetalheArtigoService } from './detalhe-artigo/detalhe-artigo.service';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { LoginclienteComponent } from './logincliente/logincliente.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { GestaoClienteComponent } from './gestao-cliente/gestao-cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ArtigoComponent,
-    TagComponent,
-    DetalheArtigoComponent
+    LoginclienteComponent,
+    PortfolioComponent,
+    GestaoClienteComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
-  providers: [ArtigoService, DetalheArtigoService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

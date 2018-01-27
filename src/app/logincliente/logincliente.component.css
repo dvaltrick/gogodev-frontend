@@ -1,0 +1,58 @@
+.divisao{
+    background-color: #00FA9A;
+    height: 4px;
+}
+
+.espaco-desc{
+    color: #3d1351;
+    margin: 10px;
+    padding: 20px;
+}
+
+.espaco-desc h3{
+    font-weight: bolder;
+}
+
+.espaco-desc ul li{
+    list-style-type: none;
+    font-size: 1.1em;
+    vertical-align: middle;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icones{
+    color: #00a566;
+}
+
+.enter-hash{
+    margin: 10px;
+    padding: 20px;
+    background-color: #9931cc;
+    color: white;
+    text-align: right;
+}
+
+.enter-hash .btn-info{
+    background-color: white;
+    color: #9931cc;
+    border-color: white;
+}
+
+.enter-hash .btn-info:hover{
+    background-color: #eee;
+    color: #9931cc;
+    border-color: #eee;  
+}
+
+.enter-hash .btn-link{
+    font-size: 0.75em;
+    color: white;
+    text-decoration-line: none;
+}
+
+.enter-hash .btn-link:hover{
+    font-size: 0.75em;
+    color: #00FA9A;
+    text-decoration-line: none;
+} 

@@ -17,16 +17,12 @@
     background-color: #842ab1;
 }
 
-.tecs{
-    background-color: #47175e;
+.tech{
+    background-color: #842ab1;
+    color: white;
     height: 200px;
     padding-top: 10px;
     padding-left: 20px;
-}
-
-
-.tecs img{
-    height: 50px;
 }
 
 .img-web{
@@ -60,4 +56,8 @@
     height: 350px;
     align-items: center;
     vertical-align: middle;
+}
+
+.d-block{
+    height: 400px !important;
 }
