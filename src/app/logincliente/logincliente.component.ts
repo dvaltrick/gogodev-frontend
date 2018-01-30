@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logincliente',
@@ -6,15 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./logincliente.component.css']
 })
 export class LoginclienteComponent implements OnInit {
-  codigoCliente : string;
+  codigoCliente : string = "";
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
   public open(){   
-    console.log("Testeeee");
-    alert("Oiii");
+    this.router.navigateByUrl('/gestaocliente/'+this.codigoCliente);;
   }
 }

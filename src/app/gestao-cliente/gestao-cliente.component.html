@@ -1,3 +1,60 @@
-<p>
-  gestao-cliente works!
-</p>
+<div class="divisao"></div>
+<div class="row">
+  <div class="card cliente-screen">
+    <div class="card-header">
+      {{cliente?.nome}}
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-sm-6">
+          <div id="accordion">
+            <label>Meus projetos</label>
+            <div [attr.id]="'collapse' + i" *ngFor="let projeto of projetos; let i = index">
+              <div class="card">
+                <div class="card-header" id="heading">
+                  <h5 class="mb-0">
+                    <button class="btn btn-default" data-toggle="collapse" [attr.data-target]="'#'+i" aria-expanded="true" aria-controls="collapse">
+                      {{projeto?.nome}}
+                    </button>
+                  </h5>
+                </div>
+                <div [attr.id]="i" class="collapse" aria-expanded="false" aria-labelledby="heading" data-parent="#accordion">
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <h5>ESCOPO </h5>
+                          <article>
+                            {{projeto?.escopo}}
+                          </article>
+                        </div>
+                        <div class="col-sm-6">
+                          <h5>EVOLUÇÃO </h5>
+                          
+                        </div>
+                      </div>
+                      <br />
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <h5>TAREFAS </h5>
+                          <div class="list-group">
+                            <a class="list-group-item list-group-item-action flex-column align-items-start" 
+                              *ngFor="let tarefa of projeto.tarefas">
+                              <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">{{tarefa.titulo}}</h6>
+                                <span class="badge badge-info ">EM ANDAMENTO</span>
+                              </div>
+                              <small>{{tarefa.descricao}}</small>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

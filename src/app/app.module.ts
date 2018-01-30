@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -11,6 +11,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { LoginclienteComponent } from './logincliente/logincliente.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GestaoClienteComponent } from './gestao-cliente/gestao-cliente.component';
+import { GestaoClienteService } from './gestao-cliente/gestao-cliente.service';
+import { CollapseModule } from 'ngx-bootstrap/collapse/collapse.module';
 
 @NgModule({
   declarations: [
@@ -22,12 +24,16 @@ import { GestaoClienteComponent } from './gestao-cliente/gestao-cliente.componen
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     HttpModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    CollapseModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    GestaoClienteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

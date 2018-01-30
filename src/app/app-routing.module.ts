@@ -10,7 +10,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'logincliente', component: LoginclienteComponent},
   {path: 'portfolio', component: PortfolioComponent},
-  {path: 'gestaocliente/{hash}', component: GestaoClienteComponent}
+  {path: 'gestaocliente/:hash', component: GestaoClienteComponent}
 ]; 
 
 @NgModule({

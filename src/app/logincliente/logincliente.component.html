@@ -17,7 +17,7 @@
     <div class="enter-hash">
       <h3>Já estamos trabalhando juntos?</h3>
       <label>Insira o código que você recebeu por email e acompanhe o andamento do seu projeto</label>
-      <input class="form-control" type="text" ng-model="codigoCliente" placeholder="Insira aqui seu código..." />
+      <input class="form-control" type="text" [(ngModel)]="codigoCliente" placeholder="Insira aqui seu código..." />
       <br>
       <button type="button" class="btn btn-info" (click)="open()">Acompanhar</button>
       <button type="button" class="btn btn-link"  >Esqueci meu código...</button>
