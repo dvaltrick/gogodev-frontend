@@ -14,6 +14,11 @@ export class GestaoClienteComponent implements OnInit {
   private cliente:Cliente;
   private projetos: Projeto[];
 
+  // Pie
+  public pieChartLabels:string[] = ['Concluídas','Desenvolvimento','Aguardando'];
+  public pieChartData:number[] = [4,1,2];
+  public pieChartType:string = 'pie';
+ 
   constructor(
     private route: ActivatedRoute,
     private gestaoClientesService: GestaoClienteService) { }
@@ -38,6 +43,13 @@ export class GestaoClienteComponent implements OnInit {
                 console.log(data);
                 element.tarefas = data;
               });  
+
+              this.gestaoClientesService.buscarTotaisTarefasDoProjeto(element.id).subscribe(data=>{
+                console.log('PIE CHART DATA');
+                console.log(data);
+                element.pieChartData = [data.concluidas,data.desenvolvimento,data.aguardando];
+                console.log(element.pieChartData);
+              });
             });
             console.log('Projetos');
             console.log(this.projetos);
@@ -50,6 +62,15 @@ export class GestaoClienteComponent implements OnInit {
     }else{
       //Redirecionar!!!!!
     }
+  }
+
+  // events
+  public chartClicked(e:any):void {
+    console.log(e);
+  }
+ 
+  public chartHovered(e:any):void {
+    console.log(e);
   }
 
 }

@@ -25,4 +25,8 @@ export class GestaoClienteService {
     return this.http.get<Tarefa[]>(this.URLbase+'tarefas/'+projetoId);  
   }
 
+  public buscarTotaisTarefasDoProjeto(projetoId:number):Observable<any>{
+    return this.http.get<any>(this.URLbase+'totais/'+projetoId);
+  }
+
 }

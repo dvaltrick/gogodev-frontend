@@ -1,6 +1,18 @@
+.espaco{
+    background-color: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+}
+
 .divisao{
     background-color: #00FA9A;
     height: 4px;
+}
+
+.espaco-titulo{
+    color: #909090;
 }
 
 .cliente-screen{
@@ -9,6 +21,13 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 50px;
+    border: 0px;
+}
+
+.cliente-screen .card-header{
+    font-size: 1.5em;
+    color: #00a566;
+    background-color: white;
 }
 
 #accordion{
@@ -28,20 +47,16 @@
     text-decoration-style: none;
     text-align: left;
     color: #3d1351;
-    background-color: transparent;
+    background-color: #f6f6f6;
 }
 
 .card-header .btn-default:hover{
     text-decoration-style: none;
     color: #9931cc;
     text-align: left;
-    background-color: transparent;
+    background-color: #f6f6f6;
 }
 
 .card-body h5{
     color: #00a566;
-}
-
-.card-body ul li{
-
 }

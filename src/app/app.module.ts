@@ -14,6 +14,8 @@ import { GestaoClienteComponent } from './gestao-cliente/gestao-cliente.componen
 import { GestaoClienteService } from './gestao-cliente/gestao-cliente.service';
 import { CollapseModule } from 'ngx-bootstrap/collapse/collapse.module';
 
+import { ChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,6 +31,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse/collapse.module';
     HttpModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
+    ChartsModule,
     CollapseModule.forRoot()
   ],
   providers: [
