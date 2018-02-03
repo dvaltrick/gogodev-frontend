@@ -13,6 +13,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
+    "@angular/cdk": "^5.1.1",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
     "@angular/core": "^5.2.0",
@@ -26,8 +27,10 @@
     "chart.js": "^2.7.1",
     "core-js": "^2.4.1",
     "font-awesome": "^4.7.0",
+    "ng-gallery": "^1.0.1",
     "ng2-charts": "^1.6.0",
     "ngx-bootstrap": "^2.0.2",
+    "ngx-slider": "0.0.5",
     "rxjs": "^5.5.6",
     "zone.js": "^0.8.19"
   },

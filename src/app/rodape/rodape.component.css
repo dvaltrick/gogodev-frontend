@@ -1,0 +1,12 @@
+.footer{
+    background-color: #3d1351;
+    vertical-align: middle;
+    padding: 5px;
+    color: white;
+    height: 70px;
+}
+
+.footer p{
+    padding-top: 20px;
+    vertical-align: middle;
+}

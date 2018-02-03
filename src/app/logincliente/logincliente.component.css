@@ -1,8 +1,3 @@
-.divisao{
-    background-color: #00FA9A;
-    height: 4px;
-}
-
 .espaco-desc{
     color: #3d1351;
     margin: 10px;
@@ -56,3 +51,9 @@
     color: #00FA9A;
     text-decoration-line: none;
 } 
+
+.row{
+    min-height: 100%;
+    height: 100%;
+    bottom: 0px;
+}

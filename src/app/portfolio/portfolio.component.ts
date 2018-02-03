@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RodapeComponent } from '../rodape/rodape.component';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-
+  
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {    
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RodapeComponent } from '../rodape/rodape.component';
 
 @Component({
   selector: 'app-home',

@@ -1,63 +1,37 @@
-.apresentacao{
-    background-color: white; 
-    height: 350px;
+.slide-painel{
+    position: fixed;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    top:86px;
+    left: 0;
+    right: 0;
 }
 
-.divisao{
-    background-color: #00FA9A;
-    height: 4px;
+.more-info{
+    background-color: white;
+    margin-top: 400px;
+    position:absolute;
+    width:100%;
 }
 
-.btn-default{
-    background-color:  #9931cc;
-    color: white;
-}
-
-.btn-default:hover{
-    background-color: #842ab1;
-}
-
-.tech{
-    background-color: #842ab1;
-    color: white;
-    height: 200px;
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
-.img-web{
-    height: 100%;
-    width: 100%;
-}
-
-.caixa{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 50px;
-    padding-left: 50px;
-}
-
-.titulo{
-    text-align: left;
-    font-size: 2em;
-    font-weight: bolder;
-    color: #9931cc;
-}
-
-.texto{
-    text-align: left;
-    font-weight: 1.1em;
-    color: #9931cc;    
-}
-
-.container{
-    background-color: white;  
-    color: #9931cc;
-    font-size: 1.1em;
-    height: 350px;
-    align-items: center;
-    vertical-align: middle;
-}
 
 .d-block{
     height: 400px !important;
 }
+
+.more-info-descricao{
+    margin-top: 50px;
+}
+
+.fazemos-titulo{
+    text-align: center;
+}
+
+.fazemos-texto{
+    margin: 30px;
+    background-color: white;
+}
+

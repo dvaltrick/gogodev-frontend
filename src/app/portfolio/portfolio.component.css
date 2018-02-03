@@ -1,4 +1,7 @@
-.divisao{
-    background-color: #00FA9A;
-    height: 4px;
+.portfolio{
+    padding: 50px;
+}
+
+.portfolio .card{
+    margin: 10px;
 }

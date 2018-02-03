@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { RodapeComponent } from '../rodape/rodape.component';
+
 @Component({
   selector: 'app-logincliente',
   templateUrl: './logincliente.component.html',
